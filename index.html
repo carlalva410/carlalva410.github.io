@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW WORLD'S VAULT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+      <body>
+          <div class="container">
+              <div class="nav-wrapper">
+                  <div class="left-side">
+                        <div class="nav-link-wrapper active-nav-link">
+                          <a href="index.html">Home</a>
+                        </div>
+
+                        <div class="nav-link-wrapper">
+                          <a href="about.html">About</a>
+                        </div>  
+                  </div>
+                  
+                  <div class="right-side">
+                        <div class="brand">
+                          <div>NEW WORLD'S VAULT</div>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="content-wrapper">
+                  <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(Images/exploring1.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+                                <img src="Images/logos/binoculars.png">
+                              </div>
+                              
+                              <div class="subtitle">
+                                Tips and hints about Aeternum Island                           
+                              </div>
+                          </div>                       
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(Images/farming1.jpg)"></div>
+                      
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                              <img src="Images/logos/dig-dug.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                              Tips and hints about farming                           
+                            </div>
+                        </div>
+                    </div>    
+
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(Images/smithing1.jpg)"></div>
+                        
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+                                <img src="Images/logos/anvil-impact.png">
+                              </div>
+                              
+                              <div class="subtitle">
+                                Tips and hints about crafting           
+                              </div>
+                          </div>                       
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(Images/battlefront1.jpg)"></div>
+                      
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                              <img src="Images/logos/swords-power.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                              Tips and hints about battle         
+                            </div>
+                        </div>                       
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(Images/fight1.jpg)"></div>
+                      
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                              <img src="Images/logos/zeus-sword.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                              Tips and hints about character builds           
+                            </div>
+                        </div>                       
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(Images/team1.jpg)"></div>
+                      
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                              <img src="Images/logos/unstable-orb.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                              Boost Service           
+                            </div>
+                        </div>                       
+                    </div>
+
+
+                        
+                        
+
+
+
+
+                  
+
+
+                    
+                  </div>
+              </div>
+          </div>
+      </body>
+          <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+            portfolioItems.forEach(portfolioItem => {
+              portfolioItem.addEventListener('mouseover', () => {
+                  portfolioItem.childNodes[1].classList.add('img-darken');
+              })
+
+              portfolioItem.addEventListener('mouseout', () => {
+                  portfolioItem.childNodes[1].classList.remove('img-darken');
+              })
+            })  
+          </script>
+</html> 
